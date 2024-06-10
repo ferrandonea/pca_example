@@ -40,5 +40,7 @@ def baja_datos(tickers: list[str], start: str = "2000-01-01", end: str = None, i
         return pd.DataFrame()
 
 tickers = ["MSFT", "GOOG", "EWZ", "BRK-B", "COST", "JNJ", "ZF=F", "ECH"]
-datos = baja_datos(tickers)
-print(datos)
+
+if __name__ == "__main__":
+    datos = baja_datos(tickers)
+    print(datos)
